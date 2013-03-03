@@ -1,5 +1,3 @@
-var jasmine = require('jasmine-node');
-
 /**
  * Create mock instance.  All properties of the first argument's prototype
  * are added as spies to the instance.
@@ -136,10 +134,4 @@ var argThat = function (matchFunction) {
       return !!matchFunction.call(null, arg);
     }
   };
-};
-
-module.exports = {
-  mock: mock,
-  when: when,
-  argThat: argThat
 };
